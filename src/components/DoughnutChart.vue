@@ -19,12 +19,12 @@
     data() {
       return {
         chartData: {
-          labels: [ 'Late', 'Due', 'Paid' ],
+          labels: [ 'Paid', 'Due', 'Late' ],
           datasets: [ { data: [40, 20, 12] } ]
         },
         chartOptions: {
           responsive: true,
-          backgroundColor: ['#DB6154', '#F2BD4A', '#4F9D69'],
+          backgroundColor: ['#4F9D69', '#F2BD4A','#DB6154' ],
         }
       }
     }
