@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello" style="background-color: #1F2E42  ; ">
     <h1>{{ msg }}</h1>
       
   </div>
@@ -29,5 +29,11 @@ li {
 }
 a {
   color: #42b983;
+}
+h1{
+  font-size: 50px;
+  color: #FFFFFF;
+  font-family: "filson-pro", sans-serif;
+
 }
 </style>
