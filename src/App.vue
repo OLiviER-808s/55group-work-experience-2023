@@ -1,19 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" class="px-24 bg-black">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <BarChart />
+  <DoughnutChart />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BarChart from './components/BarChart.vue'
+import DoughnutChart from './components/DoughnutChart.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { BarChart, DoughnutChart}
 }
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
