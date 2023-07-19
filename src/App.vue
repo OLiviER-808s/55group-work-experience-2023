@@ -5,6 +5,9 @@
     <BulletinBox title="" />
   </div>
 
+<div style="height: 75px;"></div>
+
+  <!-- First Bulletin Box -->
   <div class="grid grid-cols-3 justify-items-center">
     <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson" style="font-size: 25px; color: black;">
       <div class="flex items-center justify-between">
@@ -13,12 +16,20 @@
       </div>
     </div>
 
-    <!-- Second Bulletin Box-->
+    <!-- Second Bulletin Box -->
     <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson" style="font-size: 25px; color: black;">
+      <div class="flex items-center justify-between">
+        <h3>Title</h3>
+        <p class="text-sm">Pin</p>
+      </div>
     </div>
     
-    <!-- Third Bulletin Box-->
+    <!-- Third Bulletin Box -->
     <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson" style="font-size: 25px; color: black;">
+      <div class="flex items-center justify-between">
+        <h3>Title</h3>
+        <p class="text-sm">Pin</p>
+      </div>
     </div>
   </div>
   
