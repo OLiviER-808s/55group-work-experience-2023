@@ -54,14 +54,14 @@
       <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
         style="font-size: 18px; color: black;">
         <div class="flex items-center justify-between">
-          <h3 class="border-b-2 border-black font-bold">Online Webinar</h3>
+          <h3 class="border-b-2 border-black font-bold">Marketing Strategies with Sam Sulek</h3>
           <font-awesome-icon v-on:click="section1 = !section1" :icon="['fas', 'thumbtack']" class="text-white" :class="section1 ? 'text-yellow-300' : 'text-white'" />
               </div>
-              <p> Test Test Test Test Test Test Test Test Test Test Test </p>
-              <div style="height: 27px;"></div>
+              <p> This will take place on the 24th November at 6pm. </p>
+              <div style="height: 1px;"></div>
               <h3 class="border-b-2 border-black font-bold">Tags</h3>
               <h3 class="font-bold">@News @Marketing @Pinned</h3>
-              <div style="height: 1px;"></div>
+              <div style="height: 0px;"></div>
               <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded">
                 Read more 
                 </button>
@@ -74,7 +74,7 @@
             <h3 class="border-b-2 border-black font-bold">System Maintenance</h3>
             <font-awesome-icon v-on:click="section2 = !section2" :icon="['fas', 'thumbtack']" class="text-white" :class="section2 ? 'text-yellow-300' : 'text-white'" />
                 </div>
-                <p> Test Test Test Test Test Test Test Test Test Test Test </p>
+                <p> There will be a system maintenance between 5:30pm and 7:30pm. </p>
                 <div style="height: 30px;"></div>
                 <h3 class="border-b-2 border-black font-bold">Tags</h3>
                 <h3 class="font-bold">@News @Pinned</h3>
@@ -88,11 +88,11 @@
         <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
-            <h3 class="border-b-2 border-black font-bold">Online Webinar</h3>
+            <h3 class="border-b-2 border-black font-bold">Loop Calculator</h3>
             <div style="height: px;"></div>
             <font-awesome-icon v-on:click="section3 = !section3" :icon="['fas', 'thumbtack']" class="text-white" :class="section3 ? 'text-yellow-300' : 'text-white'" />
                </div>
-               <p> Test Test Test Test Test Test Test Test Test Test Test </p>
+               <p> An insight into Loop's new 'Social Value' calculator </p>
                 <div style="height: 31px;"></div>
                 <h3 class="border-b-2 border-black font-bold">Tags</h3>
                 <h3 class="font-bold">@News @Pinned</h3>
