@@ -58,12 +58,11 @@
           <font-awesome-icon v-on:click="section1 = !section1" :icon="['fas', 'thumbtack']" class="text-white" :class="section1 ? 'text-yellow-300' : 'text-white'" />
               </div>
               <p> Test Test Test Test Test Test Test Test Test Test Test </p>
-              <div style="height: 3px;"></div>
+              <div style="height: 27px;"></div>
               <h3 class="border-b-2 border-black font-bold">Tags</h3>
-              <h3 class="font-bold">@News</h3>
-              <h3 class="font-bold">@Marketing</h3>
-              <h3 class="font-bold">@Pinned</h3>
-              <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+              <h3 class="font-bold">@News @Marketing @Pinned</h3>
+              <div style="height: 1px;"></div>
+              <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded">
                 Read more 
                 </button>
         </div>
@@ -76,11 +75,11 @@
             <font-awesome-icon v-on:click="section2 = !section2" :icon="['fas', 'thumbtack']" class="text-white" :class="section2 ? 'text-yellow-300' : 'text-white'" />
                 </div>
                 <p> Test Test Test Test Test Test Test Test Test Test Test </p>
-                <div style="height: 25px;"></div>
+                <div style="height: 30px;"></div>
                 <h3 class="border-b-2 border-black font-bold">Tags</h3>
-                <h3 class="font-bold">@Marketing</h3>
-                <h3 class="font-bold">@Pinned</h3>
-                <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+                <h3 class="font-bold">@News @Pinned</h3>
+                <div style="height: 25px;"></div>
+                <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded">
                 Read more 
                 </button>
         </div>
@@ -90,15 +89,15 @@
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
             <h3 class="border-b-2 border-black font-bold">Online Webinar</h3>
+            <div style="height: px;"></div>
             <font-awesome-icon v-on:click="section3 = !section3" :icon="['fas', 'thumbtack']" class="text-white" :class="section3 ? 'text-yellow-300' : 'text-white'" />
                </div>
                <p> Test Test Test Test Test Test Test Test Test Test Test </p>
-                <div style="height: 15px;"></div>
+                <div style="height: 31px;"></div>
                 <h3 class="border-b-2 border-black font-bold">Tags</h3>
-                <h3 class="font-bold">@News</h3>
-                <h3 class="font-bold">@Pinned</h3>
-                <div style="height: 6px;"></div>
-                <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+                <h3 class="font-bold">@News @Pinned</h3>
+                <div style="height: 25px;"></div>
+                <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded">
                 Read more 
                 </button>
 
