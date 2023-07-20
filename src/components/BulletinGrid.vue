@@ -54,8 +54,8 @@
       <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
         style="font-size: 20px; color: black;">
         <div class="flex items-center justify-between">
-          <h3 class="">Online Webinar</h3>
-          <font-awesome-icon :icon="['fas', 'thumbtack']" />
+          <h3 class="border-b-2 border-black">Online Webinar</h3>
+          <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section1 ? 'text-yellow-300' : 'text-white'" />
           <input type="checkbox" id="section1" v-model="section1" />
               </div>
         </div>
@@ -65,19 +65,18 @@
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
             <h3 class="border-b-2 border-black">System Maintenance</h3>
-            <font-awesome-icon :icon="['fas', 'thumbtack']" />
+            <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section2 ? 'text-yellow-300' : 'text-white'"/>
             <input type="checkbox" id="section2" v-model="section2" />
           </div>
         </div>
-
 
         <!-- Third Bulletin Box -->
         <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
             <h3 class="border-b-2 border-black">Online Webinar</h3>
-            <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-red-900" :class="checked ? 'text-red-900' : 'text-blue-600'"/>
-            <input type="checkbox" id="checkbox" v-model="checked" />
+            <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section3 ? 'text-yellow-300' : 'text-white'"/>
+            <input type="checkbox" id="section3" v-model="section3" />
           </div>
         </div>
       </div>
@@ -101,14 +100,14 @@ export default {
       oldCheck: false,
       newCheck: false,
       section1: false,
-      section2: false
+      section2: false,
+      section3: false 
 
       
     }
   }
 }
 </script>
-  
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

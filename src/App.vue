@@ -3,7 +3,6 @@
     <HelloWorld msg="Bulletin Board" />
 
     <div class="text-base text-black">
-      <font-awesome-icon :icon="['fas', 'thumbtack']" />
       <font-awesome-icon icon="fa-solid fa-user-secret" />
     </div>
     <BulletinGrid />
