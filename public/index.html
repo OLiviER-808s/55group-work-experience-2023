@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/eap6cjk.css">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <title><%= htmlWebpackPlugin.options.title %></title>
     
  <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -16,5 +19,50 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <div id='map' style='width: 800px; height: 800px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoienliZXJ3b2xmaSIsImEiOiJjbGs5cXpkZG0wem5nM3NydHhvdTFrMmJsIn0.FqnLAPPbIlRIaXNZakf-GQ';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+      });
+
+      map.on("load", function() {
+
+        // Add a vector source for admin-1 boundaries
+        map.addSource("admin-1", {
+          type: "vector",
+          url: "mapbox.boundaries",
+          promoteId: "mapbox_id"
+        });
+
+        // Define a filter for US worldview boundaries
+        let worldviewFilter = [
+          "any",
+          ["==", "all", ["get", "worldview"]],
+          ["in", "US", ["get", "worldview"]]
+        ];
+
+        // Add a style layer with the admin-1 source below map labels
+        map.addLayer(
+                {
+                  id: "admin-1-fill",
+                  type: "fill",
+                  source: "admin-1",
+                  "source-layer": "boundaries_admin_1",
+                  filter: worldviewFilter,
+                  paint: {
+                    "fill-color": "#CCCCCC",
+                    "fill-opacity": 0.5
+                  }
+                },
+                // This final argument indicates that we want to add the Boundaries layer
+                // before the `waterway-label` layer that is in the map from the Mapbox
+                // Light style. This ensures the admin polygons are rendered below any labels
+                "waterway-label"
+        );
+      });
+    </script>
+
   </body>
 </html>
