@@ -7,6 +7,8 @@
     <h2>Invoice Overview</h2>
   </div>
 
+  <InvoiceOverview />
+
   <!-- Actions Goes Here -->
   <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg" style="background: #1f2e42">
     <h2>Actions</h2>
@@ -37,6 +39,7 @@ import navBar from "@/components/navBar.vue";
 import footerComp from "@/components/footerComp.vue";
 import mapComp from "@/components/mapComp.vue";
 import ActionTable from './components/ActionTable.vue';
+import InvoiceOverview from './components/InvoiceOverview.vue';
 
 export default {
   name: 'App',
@@ -47,10 +50,11 @@ export default {
     mapComp,
     BulletinGrid,
     ActionTable,
+    InvoiceOverview 
   }
+  
 }
 </script>
-
 <style>
 #app {
   -webkit-font-smoothing: antialiased;
