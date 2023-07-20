@@ -11,7 +11,8 @@
   <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg" style="background: #1f2e42">
     <h2>Actions</h2>
   </div>
-
+  
+  <ActionTable msg="Welcome to Your Vue.js App"/>
   <!-- Map Goes Here -->
   <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg" style="background: #1f2e42">
     <h2>Project Distribution Map</h2>
@@ -30,11 +31,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import BulletinGrid from './components/BulletinGrid.vue'
+import HelloWorld from './components/HelloWorld.vue';
+import BulletinGrid from './components/BulletinGrid.vue';
 import navBar from "@/components/navBar.vue";
 import footerComp from "@/components/footerComp.vue";
 import mapComp from "@/components/mapComp.vue";
+import ActionTable from './components/ActionTable.vue';
 
 export default {
   name: 'App',
@@ -44,6 +46,7 @@ export default {
     footerComp,
     mapComp,
     BulletinGrid,
+    ActionTable,
   }
 }
 </script>
