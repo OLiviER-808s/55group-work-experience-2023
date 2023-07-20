@@ -16,17 +16,18 @@
     components: {
       Doughnut
     },
+    
     data() {
       return {
         chartData: {
-          labels: [ 'Paid', 'Due', 'Late' ],
-          datasets: [ { data: [40, 20, 12] } ]
+          labels: [ 'Paid', 'Due','Late'  ],
+          datasets: [ { data: [423, 210, 122] } ]
         },
         chartOptions: {
           responsive: true,
           backgroundColor: ['#4F9D69', '#F2BD4A','#DB6154' ],
+          }  
         }
       }
     }
-  }
   </script>
