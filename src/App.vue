@@ -1,56 +1,31 @@
 <template>
-  <HelloWorld msg="Bulletin Board"/>
+  <div>
+    <HelloWorld msg="Bulletin Board" />
 
-  <div class="grid grid-cols-3">
-    <BulletinBox title="" />
+    <div class="text-base text-black">
+      <font-awesome-icon :icon="['fas', 'thumbtack']" />
+      <font-awesome-icon icon="fa-solid fa-user-secret" />
+    </div>
+    <BulletinGrid />
   </div>
-
-<div style="height: 75px;"></div>
-
-  <!-- First Bulletin Box -->
-  <div class="grid grid-cols-3 justify-items-center">
-    <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson" style="font-size: 25px; color: black;">
-      <div class="flex items-center justify-between">
-        <h3>Title</h3>
-        <p class="text-sm">Pin</p>
-      </div>
-    </div>
-
-    <!-- Second Bulletin Box -->
-    <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson" style="font-size: 25px; color: black;">
-      <div class="flex items-center justify-between">
-        <h3>Title</h3>
-        <p class="text-sm">Pin</p>
-      </div>
-    </div>
-    
-    <!-- Third Bulletin Box -->
-    <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson" style="font-size: 25px; color: black;">
-      <div class="flex items-center justify-between">
-        <h3>Title</h3>
-        <p class="text-sm">Pin</p>
-      </div>
-    </div>
-  </div>
-  
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import BulletinBox from './components/BulletinBox.vue'
+import BulletinGrid from './components/BulletinGrid.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    BulletinBox
+    BulletinGrid,
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif; 
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
