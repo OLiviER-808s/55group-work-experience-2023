@@ -28,12 +28,14 @@
   
   <BulletinGrid />
 
+  <Invoice />
+
   <!-- Footer -->
   <footer-comp></footer-comp>
 </template>
-
+  
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Invoice from "./components/Invoice.vue";;
 import BulletinGrid from './components/BulletinGrid.vue';
 import navBar from "@/components/navBar.vue";
 import footerComp from "@/components/footerComp.vue";
@@ -44,7 +46,7 @@ import InvoiceOverview from './components/InvoiceOverview.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Invoice,
     navBar,
     footerComp,
     mapComp,
@@ -65,3 +67,4 @@ export default {
   font-family: 'filson-pro', sans-serif;
 }
 </style>
+  
