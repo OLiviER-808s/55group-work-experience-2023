@@ -1,25 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <div class="p-8 bg-primary"></div>
+  <div id="app">
+    <Invoice />
+    
+    <Invoice />
+    
+    <Invoice />
+    
+  </div>
 </template>
-
+  
+<script>
+import Invoice from "./components/Invoice.vue";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Invoice,
+  },
+};
 </script>
-
+  
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Add any additional styles for your main App component */
 </style>
+  
