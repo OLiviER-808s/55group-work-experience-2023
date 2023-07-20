@@ -17,5 +17,3 @@ library.add(faThumbTack)
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)
 .mount('#app')
-
-createApp(App).mount('#app')
