@@ -4,8 +4,6 @@
   <div class="p-8 bg-primary"></div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
