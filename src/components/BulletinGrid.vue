@@ -6,7 +6,7 @@
       <BulletinBox title="" />
     </div>
 
-    <div style="height: 75px;"></div>
+    <div style="height: 0px;"></div>
 
     <!-- Seperates each box into four sections -->
     <div class="grid grid-cols-4 justify-items-center">
@@ -52,16 +52,20 @@
 
       <!-- First Bulletin Box -->
       <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
-        style="font-size: 20px; color: black;">
+        style="font-size: 18px; color: black;">
         <div class="flex items-center justify-between">
           <h3 class="border-b-2 border-black font-bold">Online Webinar</h3>
-          <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section1 ? 'text-yellow-300' : 'text-white'" />
-          <input type="checkbox" id="section1" v-model="section1" />
+          <font-awesome-icon v-on:click="section1 = !section1" :icon="['fas', 'thumbtack']" class="text-white" :class="section1 ? 'text-yellow-300' : 'text-white'" />
               </div>
-              dffberherergergergerge
-              ergergergergergergerer
-              sdfsdfsdfsdfsdfsdfsdff
-              wegreberberbebrerberbe
+              <p> Test Test Test Test Test Test Test Test Test Test Test </p>
+              <div style="height: 3px;"></div>
+              <h3 class="border-b-2 border-black font-bold">Tags</h3>
+              <h3 class="font-bold">@News</h3>
+              <h3 class="font-bold">@Marketing</h3>
+              <h3 class="font-bold">@Pinned</h3>
+              <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+                Read more 
+                </button>
         </div>
 
         <!-- Second Bulletin Box -->
@@ -69,13 +73,16 @@
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
             <h3 class="border-b-2 border-black font-bold">System Maintenance</h3>
-            <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section2 ? 'text-yellow-300' : 'text-white'"/>
-            <input type="checkbox" id="section2" v-model="section2" />
+            <font-awesome-icon v-on:click="section2 = !section2" :icon="['fas', 'thumbtack']" class="text-white" :class="section2 ? 'text-yellow-300' : 'text-white'" />
                 </div>
-                dffberherergergergerge
-                ergergergergergergerer
-                sdfsdfsdfsdfsdfsdfsdff
-                wegreberberbebrerberbe
+                <p> Test Test Test Test Test Test Test Test Test Test Test </p>
+                <div style="height: 25px;"></div>
+                <h3 class="border-b-2 border-black font-bold">Tags</h3>
+                <h3 class="font-bold">@Marketing</h3>
+                <h3 class="font-bold">@Pinned</h3>
+                <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+                Read more 
+                </button>
         </div>
 
         <!-- Third Bulletin Box -->
@@ -83,16 +90,17 @@
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
             <h3 class="border-b-2 border-black font-bold">Online Webinar</h3>
-            <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section3 ? 'text-yellow-300' : 'text-white'"/>
-            <input type="checkbox" id="section3" v-model="section3" />
+            <font-awesome-icon v-on:click="section3 = !section3" :icon="['fas', 'thumbtack']" class="text-white" :class="section3 ? 'text-yellow-300' : 'text-white'" />
                </div>
-                dffberherergergergerge
-                ergergergergergergerer
-                sdfsdfsdfsdfsdfsdfsdff
-                wegreberberbebrerberbe
+               <p> Test Test Test Test Test Test Test Test Test Test Test </p>
+                <div style="height: 15px;"></div>
                 <h3 class="border-b-2 border-black font-bold">Tags</h3>
-                <h3 class="">@News</h3>
-                
+                <h3 class="font-bold">@News</h3>
+                <h3 class="font-bold">@Pinned</h3>
+                <div style="height: 6px;"></div>
+                <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded">
+                Read more 
+                </button>
 
         </div>
       </div>
