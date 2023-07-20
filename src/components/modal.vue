@@ -1,4 +1,6 @@
 <script>
+import ActionTable from './ActionTable.vue';
+
 
 export default {
 
@@ -12,9 +14,11 @@ export default {
     methods: {
     toggleModal: function(){
       this.show = !this.show;
-    }
+    },
   }
 }
+
+
 </script>
 
 <template>
@@ -42,7 +46,7 @@ export default {
             <button class="text-red-500 bg-transparent border border-solid border-red-500 hover:bg-red-500 hover:text-white active:bg-red-600 font-bold uppercase text-sm px-6 py-3 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" @click="$emit('close')">
               Close
             </button>
-            <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" @click="$emit('close')">
+            <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" @click="$emit('saveChanges')">
               Save Changes
             </button>
           </div>
