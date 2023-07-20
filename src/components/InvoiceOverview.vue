@@ -38,7 +38,7 @@
     <!-- Graph implementation -->
     <div class="grid grid-rows-1" style="margin-left: 10vw;">
       <div class="flex flex-row">
-        <div class="basis-1/2" style="margin-left: 10vw; margin-top: 5vh;"><BarChart style="max-width: 25vw; max-height: 40vw;" > </BarChart></div>
+        <div class="basis-1/2" style="margin-left: 10vw; margin-top: 5vh;"><BarChart style="max-width: 30vw; max-height: 50vw;" > </BarChart></div>
         <div class="basis-1/2" style="margin-right: 10vw;"><DoughnutChart style="max-width: 25vw; max-height: 25vw;"></DoughnutChart></div>
       </div>
     </div> 
