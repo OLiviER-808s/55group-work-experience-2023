@@ -54,30 +54,46 @@
       <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
         style="font-size: 20px; color: black;">
         <div class="flex items-center justify-between">
-          <h3 class="border-b-2 border-black">Online Webinar</h3>
+          <h3 class="border-b-2 border-black font-bold">Online Webinar</h3>
           <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section1 ? 'text-yellow-300' : 'text-white'" />
           <input type="checkbox" id="section1" v-model="section1" />
               </div>
+              dffberherergergergerge
+              ergergergergergergerer
+              sdfsdfsdfsdfsdfsdfsdff
+              wegreberberbebrerberbe
         </div>
 
         <!-- Second Bulletin Box -->
         <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
-            <h3 class="border-b-2 border-black">System Maintenance</h3>
+            <h3 class="border-b-2 border-black font-bold">System Maintenance</h3>
             <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section2 ? 'text-yellow-300' : 'text-white'"/>
             <input type="checkbox" id="section2" v-model="section2" />
-          </div>
+                </div>
+                dffberherergergergerge
+                ergergergergergergerer
+                sdfsdfsdfsdfsdfsdfsdff
+                wegreberberbebrerberbe
         </div>
 
         <!-- Third Bulletin Box -->
         <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
-            <h3 class="border-b-2 border-black">Online Webinar</h3>
+            <h3 class="border-b-2 border-black font-bold">Online Webinar</h3>
             <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-yellow-300" :class="section3 ? 'text-yellow-300' : 'text-white'"/>
             <input type="checkbox" id="section3" v-model="section3" />
-          </div>
+               </div>
+                dffberherergergergerge
+                ergergergergergergerer
+                sdfsdfsdfsdfsdfsdfsdff
+                wegreberberbebrerberbe
+                <h3 class="border-b-2 border-black font-bold">Tags</h3>
+                <h3 class="">@News</h3>
+                
+
         </div>
       </div>
     </div>
