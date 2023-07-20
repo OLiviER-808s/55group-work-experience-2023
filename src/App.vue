@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" class="px-24 bg-black">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png" class="px-24 bg-black"> -->
+  <div class="hello">
+  <ActionTable msg="Welcome to Your Vue.js App"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ActionTable from './components/ActionTable.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ActionTable
   }
 }
 </script>
