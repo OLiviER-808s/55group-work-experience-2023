@@ -11,7 +11,7 @@
   <template>
 
     <!-- Invoice Numbers -->
-    <div class="grid grid-cols-4 gap-16" style="margin-left: 16vw;  margin-bottom: 10vh;">
+    <div class="grid grid-cols-4 gap-16" style="margin-left: 20vw;  margin-bottom: 10vh;">
       <!-- Paid -->
       <div class="p-4 rounded-lg drop-shadow-lg " style="background: conic-gradient( #4F9D69 0deg 90deg, rgb(245, 245, 245) 90deg 270deg, #4F9D69 270deg 360deg);">
         <div class="grid grid-rows-2 gap-4">
