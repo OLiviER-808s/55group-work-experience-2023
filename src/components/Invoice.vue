@@ -4,7 +4,7 @@
     <h2></h2>
     
     
-    <div class="border-solid border-2 border-sky-500 w-1/3 invoice p-4" > Company name </div>
+    <div class="border-solid border-2 border-sky-500 w-1/6 invoice p-4 text-2xl" > Loop </div>
       <p style="margin-left: 85vw;" class= "font-semibold text-2xl">Invoices</p> 
     
 
@@ -18,16 +18,17 @@
          
           
         </p>
-        <p class="text-sm font-normal text-slate-700">Name</p>
-        <p>Unwrapped</p>
+        
+        <p class="text-sm font-normal text-slate-700 w-1/3 ">Name</p>
+        <p></p>
         
       </div>
-      <div class="text-sm font-light text-slate-500">
-        <p class="text-sm font-normal text-slate-700">Address</p>
+      <div class="text-sm font-light text-slate-500 w-1/3">
+        <p class="text-sm font-normal text-slate-700 ">Address</p>
         <p>The 55 Group</p>
         
       </div>
-      <div class="text-sm font-light text-slate-500">
+      <div class="text-sm font-light text-slate-500 w-1/3">
         <p class="text-sm font-normal text-slate-700">City</p>
         <p>Hull</p>
 
