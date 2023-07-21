@@ -100,7 +100,6 @@
                 <a class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded" href="https://loop.org.uk/">
                 Read more 
               </a>
-
         </div>
       </div>
     </div>
