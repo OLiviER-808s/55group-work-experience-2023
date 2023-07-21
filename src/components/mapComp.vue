@@ -29,5 +29,16 @@ export default {
       access-token="pk.eyJ1IjoienliZXJ3b2xmaSIsImEiOiJjbGs5cXpkZG0wem5nM3NydHhvdTFrMmJsIn0.FqnLAPPbIlRIaXNZakf-GQ"
       map-style="mapbox://styles/mapbox/streets-v11"
       :center="mapCenter"
-      :zoom="5" />
+      :zoom="5">
+      <MapboxLayer
+      
+          id="counties"
+          type="fill"
+          source="../../public/uk_regions.geojson"
+      
+      >
+
+      </MapboxLayer>
+  </MapboxMap>
+
 </template>
