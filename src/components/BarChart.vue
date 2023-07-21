@@ -22,6 +22,11 @@ export default {
       },
       chartOptions: {
         responsive: true,
+        plugins: {
+            legend: {
+              display: false,
+            }
+        }
       }
     }
   }

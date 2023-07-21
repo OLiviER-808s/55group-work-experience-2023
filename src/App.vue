@@ -3,26 +3,26 @@
   <nav-bar></nav-bar>
 
   <!-- Invoices Goes Here -->
-  <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg" style="background: #1f2e42">
+  <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg shadow-lg" style="background: #1f2e42">
     <h2>Invoice Overview</h2>
   </div>
 
   <InvoiceOverview />
 
   <!-- Actions Goes Here -->
-  <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg" style="background: #1f2e42">
+  <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg shadow-lg" style="background: #1f2e42">
     <h2>Actions</h2>
   </div>
   
   <ActionTable msg="Welcome to Your Vue.js App"/>
   <!-- Map Goes Here -->
-  <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg" style="background: #1f2e42">
+  <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg shadow-lg" style="background: #1f2e42">
     <h2>Project Distribution Map</h2>
   </div>
-  <map-comp></map-comp>
+  <map-comp/>
 
   <!-- Bulletin Board Goes Here -->
-  <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg" style="background: #1f2e42">
+  <div class="flex text-white mx-20 my-10 p-5 text-2xl rounded-t-lg shadow-lg" style="background: #1f2e42">
     <h2>Bulletin Board</h2>
   </div>
   
