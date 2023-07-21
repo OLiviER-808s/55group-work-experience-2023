@@ -61,10 +61,10 @@
               <div style="height: 1px;"></div>
               <h3 class="border-b-2 border-black font-bold">Tags</h3>
               <h3 class="font-bold">@News @Marketing @Pinned</h3>
-              <div style="height: 0px;"></div>
-              <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded">
+              <div style="height: 10px;"></div>
+              <a class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded" href="https://loop.org.uk/">
                 Read more 
-                </button>
+              </a>
         </div>
 
         <!-- Second Bulletin Box -->
@@ -78,10 +78,10 @@
                 <div style="height: 30px;"></div>
                 <h3 class="border-b-2 border-black font-bold">Tags</h3>
                 <h3 class="font-bold">@News @Pinned</h3>
-                <div style="height: 25px;"></div>
-                <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded">
+                <div style="height: 35px;"></div>
+                <a class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded" href="https://loop.org.uk/">
                 Read more 
-                </button>
+              </a>
         </div>
 
         <!-- Third Bulletin Box -->
@@ -96,10 +96,10 @@
                 <div style="height: 31px;"></div>
                 <h3 class="border-b-2 border-black font-bold">Tags</h3>
                 <h3 class="font-bold">@News @Pinned</h3>
-                <div style="height: 25px;"></div>
-                <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded">
+                <div style="height: 35px;"></div>
+                <a class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded" href="https://loop.org.uk/">
                 Read more 
-                </button>
+              </a>
 
         </div>
       </div>
