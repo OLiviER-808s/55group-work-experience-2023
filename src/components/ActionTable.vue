@@ -23,19 +23,19 @@ export default {
                 {
                     action_name: 'Project Narwhal',
                     dueDate: '10/09/2023',
-                    priority: 'medium',
+                    priority: 'Medium',
                     progress: 'In-Progress'
                 },
                 {
                     action_name: 'Project Penguin',
                     dueDate: '08/16/2023',
-                    priority: 'low',
+                    priority: 'Low',
                     progress: 'In-Progress'
                 },
                 {
                     action_name: 'Project Mammoth',
                     dueDate: '11/26/2023',
-                    priority: 'high',
+                    priority: 'High',
                     progress: 'Not-Started'
                 }
             ],
@@ -49,29 +49,29 @@ export default {
 
     methods: {
         changeText(priority) {
-            if (priority.toLowerCase() == "medium") {
+            if (priority == "Medium") {
 
                 return 'Medium'
             }
-            else if (priority.toLowerCase() == "high") {
+            else if (priority == "High") {
 
                 return 'High'
             }
-            else if (priority.toLowerCase() == "low") {
+            else if (priority == "Low") {
                 return 'Low'
             }
         },
 
         getColour(priority) {
-            if (priority.toLowerCase() == "medium") {
+            if (priority == "Medium") {
 
                 return 'bg-yellow-medium'
             }
-            else if (priority.toLowerCase() == "high") {
+            else if (priority == "High") {
 
                 return 'bg-red-high'
             }
-            else if (priority.toLowerCase() == "low") {
+            else if (priority == "Low") {
                 return 'bg-green-low'
             }
         },
@@ -216,12 +216,20 @@ h3 {
 
             <br>
 
-            <!-- Input Field/Label for Priority -->
-            <label for="priority">Priority:</label>
+            <!-- Input Field/Label for Priority
+            
             <input type="text" id="priority" class="px 2 border border-state-500" v-model="priority"
                 placeholder="Priority Here">
 
-            <br>
+            <br> -->
+
+            <label for="priority">Priority:</label>
+            <select style="padding-left: 6vw; padding-right: 6vw" class="px 10 border border-state-500" v-model="priority">
+                <option id="priority" disabled value="">Priority</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+            </select>
 
             <!-- Input Field/Label for Progress -->
 
