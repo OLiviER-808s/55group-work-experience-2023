@@ -39,9 +39,9 @@ import Invoice from "./components/Invoice.vue";;
 import BulletinGrid from './components/BulletinGrid.vue';
 import navBar from "@/components/navBar.vue";
 import footerComp from "@/components/footerComp.vue";
-import mapComp from "@/components/mapComp.vue";
 import ActionTable from './components/ActionTable.vue';
 import InvoiceOverview from './components/InvoiceOverview.vue';
+import mapComp from './components/mapComp.vue';
 
 export default {
   name: 'App',
@@ -49,10 +49,10 @@ export default {
     Invoice,
     navBar,
     footerComp,
-    mapComp,
     BulletinGrid,
     ActionTable,
-    InvoiceOverview 
+    InvoiceOverview,
+    mapComp
   }
   
 }

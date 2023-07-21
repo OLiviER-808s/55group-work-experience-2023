@@ -10,12 +10,16 @@ let hoveredPolygonId = null;
 map.on('load', () => {
     map.addSource('states', {
     'type': 'geojson',
-    'data': 'mapData.json'
+    'data': 'uk_regions.geojson'
     });
+    
     map.addLayer({
         'id': 'state-fills',
         'type': 'fill',
-        'source': 'states',
+        'source': {
+        'type': 'geojson',
+        'data': 'uk_regions.geojson'
+        },
         'layout': {},
         'paint': {
         'fill-color': '#627BC1',
@@ -38,6 +42,14 @@ map.on('load', () => {
         'line-width': 2
         }
     });
+    const popup = new mapboxgl.Popup();
+    map.on('mousemove', 'state-fills', (e) => {
 
-    new Popup()
-});
+        popup.setLngLat(e.lngLat)
+        popup.setMaxWidth(600)
+        popup.setHTML("<div style='font-size: 24px; padding:14px'>" + "Region: " + e.features[0].properties.rgn19nm + "<br>" + "Social Value: " + "£" + Math.floor(Math.random()*100000) + "<br>" + "Projects: " + Math.floor(Math.random()*30) + "</div>")
+        popup.addTo(map);
+
+        });
+
+    });
