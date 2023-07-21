@@ -6,7 +6,7 @@
       <BulletinBox title="" />
     </div>
 
-    <div style="height: 75px;"></div>
+    <div style="height: 0px;"></div>
 
     <!-- Seperates each box into four sections -->
     <div class="grid grid-cols-4 justify-items-center">
@@ -52,33 +52,55 @@
 
       <!-- First Bulletin Box -->
       <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
-        style="font-size: 20px; color: black;">
+        style="font-size: 18px; color: black;">
         <div class="flex items-center justify-between">
-          <h3 class="">Online Webinar</h3>
-          <font-awesome-icon :icon="['fas', 'thumbtack']" />
-          <input type="checkbox" id="section1" v-model="section1" />
+          <h3 class="border-b-2 border-black font-bold">Marketing Strategies with Sam Sulek</h3>
+          <font-awesome-icon v-on:click="section1 = !section1" :icon="['fas', 'thumbtack']" class="text-white" :class="section1 ? 'text-yellow-300' : 'text-white'" />
               </div>
+              <p> This will take place on the 24th November at 6pm. </p>
+              <div style="height: 1px;"></div>
+              <h3 class="border-b-2 border-black font-bold">Tags</h3>
+              <h3 class="font-bold">@News @Marketing @Pinned</h3>
+              <div style="height: 10px;"></div>
+              <a class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded" href="https://loop.org.uk/">
+                Read more 
+              </a>
         </div>
 
         <!-- Second Bulletin Box -->
         <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
-            <h3 class="border-b-2 border-black">System Maintenance</h3>
-            <font-awesome-icon :icon="['fas', 'thumbtack']" />
-            <input type="checkbox" id="section2" v-model="section2" />
-          </div>
+            <h3 class="border-b-2 border-black font-bold">System Maintenance</h3>
+            <font-awesome-icon v-on:click="section2 = !section2" :icon="['fas', 'thumbtack']" class="text-white" :class="section2 ? 'text-yellow-300' : 'text-white'" />
+                </div>
+                <p> There will be a system maintenance between 5:30pm and 7:30pm. </p>
+                <div style="height: 30px;"></div>
+                <h3 class="border-b-2 border-black font-bold">Tags</h3>
+                <h3 class="font-bold">@News @Pinned</h3>
+                <div style="height: 35px;"></div>
+                <a class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded" href="https://loop.org.uk/">
+                Read more 
+              </a>
         </div>
-
 
         <!-- Third Bulletin Box -->
         <div class="box-border col-4 h-72 w-64 p-4 border-4 border-blue-400 bg-blue-400 font-filson"
           style="font-size: 18px; color: black;">
           <div class="flex items-center justify-between">
-            <h3 class="border-b-2 border-black">Online Webinar</h3>
-            <font-awesome-icon :icon="['fas', 'thumbtack']" class="text-red-900" :class="checked ? 'text-red-900' : 'text-blue-600'"/>
-            <input type="checkbox" id="checkbox" v-model="checked" />
-          </div>
+            <h3 class="border-b-2 border-black font-bold">Loop Calculator</h3>
+            <div style="height: px;"></div>
+            <font-awesome-icon v-on:click="section3 = !section3" :icon="['fas', 'thumbtack']" class="text-white" :class="section3 ? 'text-yellow-300' : 'text-white'" />
+               </div>
+               <p> An insight into Loop's new 'Social Value' calculator </p>
+                <div style="height: 31px;"></div>
+                <h3 class="border-b-2 border-black font-bold">Tags</h3>
+                <h3 class="font-bold">@News @Pinned</h3>
+                <div style="height: 35px;"></div>
+                <a class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded" href="https://loop.org.uk/">
+                Read more 
+              </a>
+
         </div>
       </div>
     </div>
@@ -101,14 +123,14 @@ export default {
       oldCheck: false,
       newCheck: false,
       section1: false,
-      section2: false
+      section2: false,
+      section3: false 
 
       
     }
   }
 }
 </script>
-  
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

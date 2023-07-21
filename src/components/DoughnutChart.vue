@@ -24,10 +24,14 @@
           datasets: [ { data: [423, 210, 122] } ]
         },
         chartOptions: {
-          responsive: true,
-          backgroundColor: ['#4F9D69', '#F2BD4A','#DB6154' ],
-          }  
-        }
+        backgroundColor:  ['#4F9D69', '#F2BD4A', '#DB6154' ],
+        responsive: true,
+        plugins: {
+            legend: {
+              display: false,
+            }
+        }}
       }
-    }
+        
+    }}
   </script>
