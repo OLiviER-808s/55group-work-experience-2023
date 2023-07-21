@@ -20,11 +20,11 @@
     data() {
       return {
         chartData: {
-          labels: [ 'Paid', 'Due','Late'  ],
-          datasets: [ { data: [423, 210, 122] } ]
+          labels: ['Due', 'Paid', 'Late'  ],
+          datasets: [ { data: [210, 423,  122] } ]
         },
         chartOptions: {
-        backgroundColor:  ['#4F9D69', '#F2BD4A', '#DB6154' ],
+        backgroundColor:  ['#F2BD4A', '#4F9D69' , '#DB6154' ],
         responsive: true,
         plugins: {
             legend: {
