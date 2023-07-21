@@ -16,8 +16,8 @@ export default {
       chartData: {
         labels: [""],
         datasets: [
-          { label: "Paid", data: [423], backgroundColor:  '#4F9D69'}, 
           { label: "Due", data: [210], backgroundColor: '#F2BD4A' }, 
+          { label: "Paid", data: [423], backgroundColor:  '#4F9D69'}, 
           { label: "Late", data: [122], backgroundColor: '#DB6154'}]
       },
       chartOptions: {
