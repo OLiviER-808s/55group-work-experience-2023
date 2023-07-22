@@ -2,9 +2,6 @@
 
 import modal from './modal.vue'
 
-
-
-
 export default {
     components: {
         modal
@@ -77,39 +74,38 @@ export default {
         },
 
         saveChanges() {
-            let newCell = {
-                action_name: this.actionName,
-                dueDate: this.dueDate,
-                priority: this.priority,
-                progress: this.progress
+            let newCell; // Define newCell variable here
+
+            const editedIndex = this.cells.findIndex((cell) => cell.action_name === this.actionName);
+
+            if (editedIndex !== -1) {
+                // If the actionName already exists, update the existing action
+                this.cells[editedIndex].dueDate = this.dueDate;
+                this.cells[editedIndex].priority = this.priority;
+                this.cells[editedIndex].progress = this.progress;
+            } else {
+                // Otherwise, create a new action
+                newCell = {
+                    action_name: this.actionName,
+                    dueDate: this.dueDate,
+                    priority: this.priority,
+                    progress: this.progress
+                };
+                this.cells.push(newCell);
             }
 
+            // Recalculate daysLeft for both new and edited actions
+            this.cells.forEach((cell) => {
+                const dueDate = new Date(cell.dueDate);
+                cell.daysLeft = this.getDaysLeft(dueDate);
+            });
 
-            // Calculate days left for the new action's due date
-            const dueDate = new Date(this.dueDate);
-            // dueDate = dueDate.toLocaleDateString("en-gb")
-            newCell.daysLeft = this.getDaysLeft(dueDate);
-
-            this.cells.push(newCell);
-
-
-            this.actionName = null,
-                this.dueDate = null,
-                this.priority = null,
-                this.progress = null
-
-            this.showModal = false
-
+            this.actionName = null;
+            this.dueDate = null;
+            this.priority = null;
+            this.progress = null;
+            this.showModal = false;
         },
-
-        // getDaysLeft(dueDate) {
-        //     const currentDate = new Date();
-        //     console.log(dueDate)
-        //     const timeDifference = dueDate.getTime() - currentDate.getTime();
-        //     const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
-
-        //     return daysDifference
-        // }
 
         updateDaysLeft() {
             if (this.dueDate) {
@@ -130,6 +126,19 @@ export default {
             const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
             return daysDifference;
         },
+
+        editAction(action) {
+            // Set the modal input fields to the details of the selected action
+            this.actionName = action.action_name; // Add this line to set the actionName property
+            this.dueDate = action.dueDate;
+            this.priority = action.priority;
+            this.progress = action.progress;
+
+            // Open the modal for editing
+            this.showModal = true;
+        },
+
+
 
 
     },
@@ -180,28 +189,23 @@ h3 {
                     <td class="px-8 border border-state-500">{{ cell.action_name }}</td>
                     <td class="px-8 border border-state-500">{{ cell.dueDate }}</td>
                     <td class="px-8 border border-state-500">{{ cell.daysLeft }}</td>
-                    <td class="px-8 border border-state-500" :class="getColour(cell.priority)">{{ changeText(cell.priority)
-                    }}
-                    </td>
+                    <td class="px-8 border border-state-500" :class="getColour(cell.priority)">{{
+                        changeText(cell.priority) }}</td>
                     <td class="px-8 border border-state-500">{{ cell.progress }}</td>
+                    <td class="px-8 border border-state-500">
+                        <!-- Add the "Edit" button here -->
+                        <button @click="editAction(cell)">Edit</button>
+                    </td>
                 </tr>
             </tbody>
         </table>
     </div>
-
-
-
-
-
 
     <modal :show="showModal" @close="showModal = false" @saveChanges="saveChanges">
         <template #header>
             <h3>Create Action</h3>
         </template>
         <template #body>
-            <h3>Create your action here!</h3>
-            <br>
-
             <!-- Input Field/Label for Action Name -->
             <label for="actionName" class="px 2">Action Name:</label>
             <input type="text" id="actionName" class="px 2 border border-state-500" v-model="actionName"
@@ -224,7 +228,7 @@ h3 {
             <br> -->
 
             <label for="priority">Priority:</label>
-            <select style="padding-left: 6vw; padding-right: 6vw" class="px 10 border border-state-500" v-model="priority">
+            <select style="padding-left: 7vw; padding-right: 7vw" class="px 10 border border-state-500" v-model="priority">
                 <option id="priority" disabled value="">Priority</option>
                 <option>Low</option>
                 <option>Medium</option>
@@ -238,7 +242,7 @@ h3 {
             <label for="progress">Progress:</label>
             <select style="padding-left: 6vw; padding-right: 6vw" class="px 10 border border-state-500" v-model="progress">
                 <option id="progress" disabled value="">Progress</option>
-                <option>Not-Started</option>
+                <option> Not-Started</option>
                 <option>In-Progress</option>
                 <option>Pending</option>
                 <option>Completed</option>
